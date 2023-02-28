@@ -8,5 +8,3 @@ class WeatherCondition(Enum):
   Snow         = 4
   Clear        = 5
   Clouds       = 6
-
-  
