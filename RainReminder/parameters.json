@@ -6,5 +6,11 @@
       "latitude"  : "51.492060",
       "longitude" : "-0.016930"
   },
-  "hours_range": "5"
+  "hours_range": "5",
+  "connection_string" : "smtp_connection_string",
+  "credentials": {
+      "email"     : "email",
+      "password"  : "password"
+  },
+  "recipient_email" : "recipient_email"
 }
