@@ -1,0 +1,10 @@
+{
+  "api_endpoint" : "https://api.openweathermap.org/data/3.0/onecall",
+  "api_key" : "30d7b9cc55ecaa6f2cc1a3387784ba76",
+  "exclude_data" : "minutely,daily,alerts",
+  "current_position": {
+      "latitude"  : "51.492060",
+      "longitude" : "-0.016930"
+  },
+  "hours_range": "5"
+}
