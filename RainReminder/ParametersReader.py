@@ -44,3 +44,28 @@ class ParametersReader:
     with open(file=Path(current_directory, "parameters.json"), mode="r") as file:
       data = json.load(file)
       return data["exclude_data"]
+
+  @classmethod
+  def RetrieveConnectionString(self) -> str:
+    current_directory = os.path.dirname(os.path.realpath(__file__))
+    with open(file=Path(current_directory, "parameters.json"), mode="r") as file:
+      data = json.load(file)
+      return data["connection_string"]
+    
+  @classmethod
+  def RetrieveRecipientEmail(self) -> str:
+    current_directory = os.path.dirname(os.path.realpath(__file__))
+    with open(file=Path(current_directory, "parameters.json"), mode="r") as file:
+      data = json.load(file)
+      return data["recipient_email"]
+    
+  @classmethod
+  def RetrieveSenderCredentials(self) -> dict:
+    current_directory = os.path.dirname(os.path.realpath(__file__))
+    with open(file=Path(current_directory, "parameters.json"), mode="r") as file:
+      data = json.load(file)
+      credentials = {
+        "email"    : data["credentials"]["email"],
+        "password" : data["credentials"]["password"] 
+      }
+      return credentials
